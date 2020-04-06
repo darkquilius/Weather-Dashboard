@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="style.css">
+</head>
+
+<body>
+
+    <header class="jumbotron" id="top" style="text-align: center; background-color: black; color: white;">
+        <h1 class="display-3">Weather Dashboard</h1>
+        <p class="lead">Check the weather for a trip, an activity, or just for info!</p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <!-- search section -->
+            <div class="card col-md-4">
+                <div>
+                    <!-- search bar -->
+                    <div>
+                        <form action="search">
+                            <label for="search">Search for a city:</label>
+                            <br>
+                            <!-- <input type="text"> -->
+                            <button><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div>
+                        <!-- previous search results -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-8">
+                <div id="today-weather"></div>
+                <!-- weather content -->
+                <!-- <div class="card" style="width: 100%;">
+                    <h5>Today's Weather:</h5>
+                    <div class="card-body">
+                        <p class="card-text">Temperature:</p>
+                        <p class="card-text">Humidity:</p>
+                        <p class="card-text">Windspeed:</p>
+                        <p class="card-text">UV Index:</p>
+                    </div>
+                </div> -->
+                <!-- five day forcast section -->
+
+                <div class="card row">
+                    <!-- head for five day forcast -->
+                    <h5>Five day forcast:</h5>
+                    <!-- card element for each day -->
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <div class="card col" style="width: 18rem;">
+                                    <h5>day slot</h5>
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Temperature:</p>
+                                        <p class="card-text">Humidity:</p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="card col" style="width: 18rem;">
+                                    <h5>day slot</h5>
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Temperature:</p>
+                                        <p class="card-text">Humidity:</p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="card col" style="width: 18rem;">
+                                    <h5>day slot</h5>
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Temperature:</p>
+                                        <p class="card-text">Humidity:</p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="card col" style="width: 18rem;">
+                                    <h5>day slot</h5>
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Temperature:</p>
+                                        <p class="card-text">Humidity:</p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="card col" style="width: 18rem;">
+                                    <h5>day slot</h5>
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Temperature:</p>
+                                        <p class="card-text">Humidity:</p>
+                                    </div>
+
+                                </div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="script.js"></script>
+
+</html>
