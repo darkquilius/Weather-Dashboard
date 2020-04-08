@@ -13,9 +13,9 @@
     <link href="style.css">
 </head>
 
-<body>
+<body style="background-color: aliceblue;">
 
-    <header class="jumbotron" id="top" style="text-align: center; background-color: black; color: white;">
+    <header class="jumbotron" id="top" style="text-align: center; background-color: dodgerblue; color: white;">
         <h1 class="display-3">Weather Dashboard</h1>
         <p class="lead">Check the weather for a trip, an activity, or just for info!</p>
         <p id="currentDay" class="lead"></p>
@@ -23,15 +23,15 @@
     <div class="container">
         <div class="row">
             <!-- search section -->
-            <div class="card col-md-4 col-xs-4">
+            <div class="card col-md-4 col-xs-4" style="background: cornflowerblue">
                 <div>
                     <!-- search bar -->
                     <div>
                         <form action="search">
                             <label for="search">Search for a city:</label>
                             <br>
-                            <input type="text">
-                            <button><i class="fas fa-search"></i></button>
+                            <input id="searchInput" type="text">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
                     <div>
@@ -44,8 +44,8 @@
                 <div class="col-md-12 col-xs-12" id="today-weather">
                 </div>
 
-                <div class="row col-md-12">
-                    <div class="card col" style="width: 18rem; margin-left: 18px;">
+                <div class="row col-md-12" id="forecast-weather">
+                    <!-- <div class="card col" style="width: 18rem; margin-left: 18px;">
                         <h5>day slot</h5>
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
@@ -84,7 +84,7 @@
                             <p class="card-text">Temperature:</p>
                             <p class="card-text">Humidity:</p>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -98,6 +98,7 @@
 
 
 </body>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="script.js"></script>
