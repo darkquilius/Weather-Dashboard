@@ -2,3 +2,10 @@
     font-size: smaller;
     margin-left: 0px;
 }
+
+#todayWeather {
+    width: 100%;
+    background: lightblue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
